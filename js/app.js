@@ -83,3 +83,41 @@ li.appendChild(link);
 
 
 
+
+//event of javascript
+  document.querySelector('.clearButton').addEventListener('click',function(e){
+
+         e.preventDefault();
+        console.log('clicked');
+
+
+  });
+  
+
+document.querySelector('.clearButton').addEventListener('click',onClick);
+
+function onClick(e) {
+ 
+     let val ;
+     
+      val=e;
+      val =e.target;
+      val = e.target.textContent='targated';
+
+     console.log(val);
+     e.preventDefault();
+     
+
+}
+
+
+document.querySelector('.clearButton').addEventListener('mousedown',eventRun);
+
+  function eventRun(data){
+
+
+          console.log(`evet type:${data.type}`);
+
+  }
+
+
