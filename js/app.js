@@ -17,3 +17,10 @@ console.log(document.getElementById('task-title').textContent='Below are all of 
 console.log(document.getElementById('task-title').innerText='All list item are below');
 console.log(document.getElementById('task-title').innerHTML='<span>All list item are below </span>');
 
+
+
+
+// id and class selecting by querySelector 
+console.log(document.querySelector('#task-title').id);
+console.log(document.querySelector('.demo').id);
+console.log(document.querySelector('#task-title').style.background='#4e4e');
