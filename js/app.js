@@ -76,4 +76,10 @@ li.appendChild(link);
 
 
 
+// const del= document.querySelector('li');
+
+   del.remove(0);
+
+
+
 
