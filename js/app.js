@@ -53,6 +53,26 @@ const item =document.querySelector('li.list-group-item');
 
 
 
+// creating element by javaScript 
+
+const li =document.createElement('li');
+
+li.className='list-group-item';
+li.textContent='this is javaScript item';
+
+     document.querySelector('ul.list-group').appendChild(li);
+
+ const link = document.createElement('a');
+       
+ 
+ console.log(link);
+ 
+
+ link.innerHTML='<i class="fa fa-trash-alt  " ></i>'
+
+li.appendChild(link);
+
+
 
 
 
