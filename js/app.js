@@ -153,6 +153,61 @@ function eventRun(e){
 
 
 
+//working with task template 
+
+const form =document.querySelector('#task-Form');
+const taskInput=document.querySelector('#task');
+const taskContainer = document.querySelector('.list-group');
+
+//all function
+loadEventLiseteners();
+
+function loadEventLiseteners(){ 
+
+         form.addEventListener('submit',addTask);
+
+         taskContainer.addEventListener('click',removeTask);
+
+}
+
+
+function addTask(e){
+
+    if (taskInput.value === '') {
+      alert('field is empty!');
+    }     
+
+
+    const li= document.createElement('li');
+    li.className='list-group-item';
+    li.style.cursor='pointer';
+
+    li.appendChild(document.createTextNode(taskInput.value));
+    
+    const link =document.createElement('a');
+    link.style.float='right';
+    link.style.cursor='pointer';
+
+    
+    link.innerHTML='<i class="fa fa-trash-alt " > </i>';
+    li.appendChild(link);
+
+    taskContainer.appendChild(li);
+    
+    taskInput.value='';
+
+
+     e.preventDefault();
+}
+
+
+
+
+
+
+
+
+
 
 
 
