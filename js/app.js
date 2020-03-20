@@ -121,3 +121,48 @@ document.querySelector('.clearButton').addEventListener('mousedown',eventRun);
   }
 
 
+
+
+
+
+  
+
+
+//working with form
+
+const taskForm=document.querySelector('#task-Form');
+
+const taskInput=document.querySelector('#task');
+
+   taskForm.addEventListener('submit',eventRun);
+
+function eventRun(e){
+  
+    console.log(taskInput.value);
+    console.log(`evetn type:${e.type}`);
+
+    e.preventDefault();
+
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
